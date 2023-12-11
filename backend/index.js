@@ -148,10 +148,13 @@ app.get("/oprational", (req, res) => {
 
 
 app.post ("/oprational",(req,res)=>{
-     const q = "insert into oprational (`namee`) values (?) "
+     const q = "insert into oprational (`enquiryid`,`cibilscore`,`status`,`remark`) values (?,?,?,?) "
 
      const values = [
-        req.body.namee,
+        req.body.enquiryid,
+        req.body.cibilscore,
+        req.body.status,
+        req.body.remark,
       
      ]
 

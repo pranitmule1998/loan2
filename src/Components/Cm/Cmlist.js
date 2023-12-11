@@ -41,8 +41,10 @@ const Cmlist = () => {
                     user.map(obj => {
                         return (
                             <tr>
-                                <td>{obj.namee}</td>
-                             
+                                <td>{obj.enquiryid}</td>
+                                <td>{obj.cibilscore}</td>
+                                <td>{obj.status}</td>
+                                <td>{obj.remark}</td>
                             
                             </tr>
                         )
