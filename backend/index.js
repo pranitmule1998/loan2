@@ -130,6 +130,44 @@ app.delete("/students/delete/:id", (req, res) => {
 })
 
 
+app.get("/oprational", (req, res) => {
+    const q = "select * from oprational";
+
+    connection.query(q, (error, data) => {
+        if (error) {
+            console.log(error)
+                return res.status(500).send("error in data fetching")
+            }
+            return res.json(data)
+        
+
+    })
+
+})
+
+
+
+app.post ("/oprational",(req,res)=>{
+     const q = "insert into oprational (`namee`) values (?) "
+
+     const values = [
+        req.body.namee,
+      
+     ]
+
+     connection.query(q,values, (error, data) => {
+        if (error) {
+            console.log("error")
+                return res.status(500).send("error in data fetching")
+            }
+            return res.json(data)
+        
+
+    })
+
+
+})
+
 
 
 

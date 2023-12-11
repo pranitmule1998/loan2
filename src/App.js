@@ -15,6 +15,7 @@ import Logout from './Components/Logout.js';
 
 import Cibillist from './Components/Oe/Cibillist.js';
 import Cibilform from './Components/Oe/Cibilform.js';
+import Cmlist from './Components/Cm/Cmlist.js';
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,7 @@ function App() {
           {/* oe */}
           <Route path='/cibillist' element={<Cibillist/>}  ></Route>
           <Route path='/cibilform' element={<Cibilform/>}  ></Route>
+          <Route path='/cmlist' element={<Cmlist/>}  ></Route>
         </Routes>
       </BrowserRouter>
     </div>
