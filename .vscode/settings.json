@@ -1,5 +1,6 @@
 {
     "git.confirmSync": false,
     "git.enabled": true,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "git.decorations.enabled": true
 }

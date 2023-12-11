@@ -8,12 +8,12 @@ const Delete = () =>{
     const [user,setuser] = useState({})
     async function fetchdata(){
         const result = await
-        axios.get(`http://localhost:8000/students/${studentId}`)
-        setuser(result.data)
+        axios.get(`http://localhost:8000/students/get/${studentId}`)
+        setuser(result.data[0])
     }
 
     function deletedata (){
-        axios.delete(`http://localhost:8000/students/${studentId}`)
+        axios.delete(`http://localhost:8000/students/delete/${studentId}`)
         navigate("/show")
     }
 
