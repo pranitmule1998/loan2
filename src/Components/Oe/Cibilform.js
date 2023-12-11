@@ -2,9 +2,10 @@
 
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Cibilform = () =>{
+     const navigate = useNavigate()
     
 
     const { register, handleSubmit } = useForm()
@@ -12,6 +13,8 @@ const Cibilform = () =>{
     function savedata(data) {
         axios.post("http://localhost:8000/oprational",data);
         alert("data goes to cm")
+        navigate("/cibillist");
+
     }
 
 

@@ -34,7 +34,10 @@ const Cmlist = () => {
             
             <table>
                 <tr>
-                    <th>Name</th>
+                    <th>Enquiry Id</th>
+                    <th>Cibilscore</th>
+                    <th>Status</th>
+                    <th>Remark</th>
                  
                 </tr>
                 {
