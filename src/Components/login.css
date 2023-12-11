@@ -1,0 +1,19 @@
+#c{
+    border: 1px solid black;
+    width: 40%;
+    margin-left: 350px;
+    margin-top: 100px;
+     border-radius: 25px;
+     box-shadow: 3px 3px 3px 3px black;
+     background-image:url("C:\Users\prani\OneDrive\Desktop\Final\loanproj\src\Components\Assets\photo2.png") ;
+     
+     color: white;
+     background-size: cover;
+}
+
+body{
+    background-color: rgb(225, 238, 238);
+}
+
+
+

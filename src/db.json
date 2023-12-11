@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "name": "pranit",
+      "lastname": "",
+      "date": "",
+      "email": "pranitmule0@gmail.com",
+      "phone": "12",
+      "pancard": "12",
+      "adharcard": "",
+      "cibil": "12",
+      "gender": "Other",
+      "lname": "",
+      "dob": "",
+      "adhar": "",
+      "id": 1
+    }
+  ]
+}
