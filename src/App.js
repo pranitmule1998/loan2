@@ -11,6 +11,10 @@ import Delete from './Components/Re/Delete.js';
 import Home from './Components/Re/Home.js';
 import Login from './Components/Login.js';
 import Logout from './Components/Logout.js';
+
+
+import Cibillist from './Components/Oe/Cibillist.js';
+import Cibilform from './Components/Oe/Cibilform.js';
 function App() {
   return (
     <div className="App">
@@ -24,6 +28,12 @@ function App() {
           <Route path='/delete/:studentId' element={<Delete/>}  ></Route>
           <Route path='/login' element={<Login/>}  ></Route>
           <Route path='/logout' element={<Logout/>}  ></Route>
+
+
+
+          {/* oe */}
+          <Route path='/cibillist' element={<Cibillist/>}  ></Route>
+          <Route path='/cibilform' element={<Cibilform/>}  ></Route>
         </Routes>
       </BrowserRouter>
     </div>

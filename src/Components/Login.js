@@ -14,7 +14,7 @@ const Login = () => {
       navigate("/add")
     }      else if(name=== "oe" && pwd==="oe"){
       alert("Login Successful")
-      navigate("/oprational")
+      navigate("/cibillist")
     }
       else if(name=== "cm" && pwd==="cm"){
           alert("Login Successful")
