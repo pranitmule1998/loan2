@@ -26,18 +26,10 @@ const Cmlist = () => {
           <div className="container" >
             <div className="row">
 
-                <div className="col-4" >
-                    <h3>Regional Executive</h3>
-                    <NavLink to={"/add"}><button className="btn btn-primary col-5">Enquiry</button></NavLink>  <br /> <br />
-
-                    <NavLink to={"/show"}><button className="btn btn-primary col-5">Show List</button></NavLink>  <br /> <br />
-
-
-                    <NavLink to={"/login"}><button className="btn btn-primary col-5">Logout</button></NavLink>  <br />
-                </div>
+               
            
 
-             <div className="col-8" >
+           
 
             
             <table>
@@ -59,7 +51,7 @@ const Cmlist = () => {
             </table>
             </div>
             </div>
-            </div>
+          
         </>
     )
 }

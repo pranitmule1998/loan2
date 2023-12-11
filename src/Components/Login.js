@@ -18,7 +18,7 @@ const Login = () => {
     }
       else if(name=== "cm" && pwd==="cm"){
           alert("Login Successful")
-          navigate("/cm")
+          navigate("/cmlist")
           }
           else{
             alert('login Not Successfully');
