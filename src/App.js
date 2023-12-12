@@ -45,7 +45,7 @@ function App() {
         {/* CM */}
         <Route path='/cmlist' element={<Cmlist/>}  ></Route>
           <Route path='/cmform' element={<Cmform/>}  ></Route>
-          <Route path='/kyc' element={<Kyc/>}  ></Route>
+         
           <Route path='/approved' element={<Approved/>}  ></Route>
 
         </Routes>
