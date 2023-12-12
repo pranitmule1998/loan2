@@ -172,7 +172,54 @@ app.post ("/oprational",(req,res)=>{
 })
 
 
+// CM
+app.get("/cm", (req, res) => {
+    const q = "select * from cm";
 
+    connection.query(q, (error, data) => {
+        if (error) {
+            console.log(error)
+                return res.status(500).send("error in data fetching")
+            }
+            return res.json(data)
+        
+
+    })
+
+})
+
+
+
+app.post ("/cm",(req,res)=>{
+     const q = "insert into cm (`id`,`firstname`,`city`,`cast`,`ssc`,`hsc`,`graduation`,`cgpa`,`address`,`loanpurpose`,`nominee`,`loandate`) values (?,?,?,?,?,?,?,?,?,?,?,?) "
+
+     const values = [
+        req.body.id,
+        req.body.firstname,
+        req.body.city,
+        req.body.cast,
+        req.body.ssc,
+        req.body.hsc,
+        req.body.graduation,
+        req.body.cgpa,
+        req.body.address,
+        req.body.loanpurpose,
+        req.body.nominee,
+        req.body.loandate,
+     ]
+
+     connection.query(q,values, (error, data) => {
+        if (error) {
+            console.log("error")
+                return res.status(500).send("error in data fetching")
+            }
+            return res.json(data)
+        
+
+    })
+
+
+})
 
 
 app.listen(8000,()=>{

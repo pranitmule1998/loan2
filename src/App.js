@@ -16,6 +16,10 @@ import Logout from './Components/Logout.js';
 import Cibillist from './Components/Oe/Cibillist.js';
 import Cibilform from './Components/Oe/Cibilform.js';
 import Cmlist from './Components/Cm/Cmlist.js';
+import Kyc from './Components/Cm/Kyc.js';
+import Cmform from './Components/Cm/Cmform.js';
+import Approved from './Components/Cm/Approved.js';
+
 function App() {
   return (
     <div className="App">
@@ -35,7 +39,15 @@ function App() {
           {/* oe */}
           <Route path='/cibillist' element={<Cibillist/>}  ></Route>
           <Route path='/cibilform' element={<Cibilform/>}  ></Route>
-          <Route path='/cmlist' element={<Cmlist/>}  ></Route>
+        
+
+
+        {/* CM */}
+        <Route path='/cmlist' element={<Cmlist/>}  ></Route>
+          <Route path='/cmform' element={<Cmform/>}  ></Route>
+          <Route path='/kyc' element={<Kyc/>}  ></Route>
+          <Route path='/approved' element={<Approved/>}  ></Route>
+
         </Routes>
       </BrowserRouter>
     </div>

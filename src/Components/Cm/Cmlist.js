@@ -48,6 +48,7 @@ const Cmlist = () => {
                                 <td>{obj.cibilscore}</td>
                                 <td>{obj.status}</td>
                                 <td>{obj.remark}</td>
+                                <td><NavLink to={"/cmform"} > <button className="btn btn-outline-primary" >Kyc Form</button></NavLink></td>
                             
                             </tr>
                         )
