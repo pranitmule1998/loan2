@@ -71,6 +71,9 @@ const Approved = () => {
                                 <td>{obj.loanpurpose}</td>
                                 <td>{obj.nominee}</td>
                                 <td>{obj.loandate}</td>
+                                <td>
+                                    <NavLink to={`/approdelete/${obj.id}`} ><button>Delete</button></NavLink>
+                                </td>
                                
                             </tr>
                         )

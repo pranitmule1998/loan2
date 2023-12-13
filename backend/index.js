@@ -171,6 +171,22 @@ app.post ("/oprational",(req,res)=>{
 
 })
 
+app.delete("/oprational/cmlistdelete/:id", (req, res) => {
+    const cmId = req.params.id
+    const q = "delete  from oprational where id= ? ";
+
+    connection.query(q,[cmId], (error, data) => {
+        if (error) {
+            console.log(error)
+                return res.status(500).send({error:"error in data fetching"})
+            }
+            return res.json(data)
+        
+
+    })
+
+})
+
 
 // CM
 app.get("/cm", (req, res) => {
@@ -218,6 +234,22 @@ app.post ("/cm",(req,res)=>{
 
     })
 
+
+})
+
+app.delete("/cm/approdelete/:id", (req, res) => {
+    const appId = req.params.id
+    const q = "delete  from cm where id= ? ";
+
+    connection.query(q,[appId], (error, data) => {
+        if (error) {
+            console.log(error)
+                return res.status(500).send({error:"error in data fetching"})
+            }
+            return res.json(data)
+        
+
+    })
 
 })
 
